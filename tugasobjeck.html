@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var singa = {
+        nama : "drex",
+        warna : "oren",
+        jumlah_kaki : 4,
+        mata : {
+            warna_mata: "hitam",
+            warna_pupil: "oren"
+        },
+        telinga : {
+            warna_telinga: "mocca",
+            ukuran_telinga: "sedang"
+        },
+        dipanggil : function (){
+            return "menggeram"
+        },
+        tidur : function (){
+            return "tidur di hutan"
+        }
+     }
+     document.write("ini namanya = " + singa.nama + '<br />');
+     document.write("warna mata = " + singa.warna + '<br />');
+     document.write("warna pupil  = " + singa.mata.warna_mata + '<br />');
+     document.write("ukuran mata = " + singa.mata.ukuran_telinga + '<br />');
+     document.write("warna telinga = " + singa.telinga.warna_telinga + '<br />');
+     document.write("ukuran telinga = " + singa.telinga.ukuran_telinga + '<br />');
+     singa.dipanggil()
+     singa.tidur()
+    </script>
+</body>
+</html>
